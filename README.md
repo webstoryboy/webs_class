@@ -1,4 +1,5 @@
 # webs_class
 
-자바스크립 정리
+메인페이지
+https://webstoryboy.github.io/webs_class/
 
