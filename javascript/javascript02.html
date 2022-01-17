@@ -23,6 +23,18 @@
                 <li><a href="javascript03.html">데이터 실행하기</a></li>
                 <li><a href="javascript04.html">데이터 제어하기</a></li>
             </ul>
+            <ul>
+                <li><a href="javascript05.html">문자열 객체</a></li>
+                <li><a href="javascript06.html">배열 객체</a></li>
+                <li><a href="javascript07.html">수학 객체</a></li>
+                <li><a href="javascript08.html">숫자 객체</a></li>
+                <li><a href="javascript09.html">브라우저 객체</a></li>
+                <li><a href="javascript10.html">요소 객체</a></li>
+                <li><a href="javascript11.html">이벤트 객체</a></li>
+            </ul>
+            <ul>
+                <li><a href="practice01.html">데이터 연습하기</a></li>
+            </ul>
         </nav>
     </header>
     
@@ -76,9 +88,13 @@
     document.write(z);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result1t">
                     <h4>결과보기</h4>
-                    <div class="result01"></div>
+                    <div class="result1">
+                        100<br>
+                        200<br>
+                        javascript
+                    </div>
                 </div>
             </div>
             <!-- //sample1 -->
@@ -95,9 +111,13 @@
     document.write(z);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result2t">
                     <h4>결과보기</h4>
-                    <div class="result02"></div>
+                    <div class="result2">
+                        100<br>
+                        200<br>
+                        javascript
+                    </div>
                 </div>
             </div>
             <!-- //sample2 -->
@@ -114,9 +134,13 @@
     document.write(arr[2]);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result3t">
                     <h4>결과보기</h4>
-                    <div class="result03"></div>
+                    <div class="result3">
+                        100<br>
+                        200<br>
+                        javascript
+                    </div>
                 </div>
             </div>
             <!-- //sample3 -->
@@ -135,9 +159,15 @@
     document.write(arr[2][1]);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result4t">
                     <h4>결과보기</h4>
-                    <div class="result04"></div>
+                    <div class="result4">
+                        100<br>
+                        200<br>
+                        javascript,jquery<br>
+                        javascript<br>
+                        jquery<br>
+                    </div>
                 </div>
             </div>
             <!-- //sample4 -->
@@ -152,9 +182,11 @@
     document.write(arr.length);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result5t">
                     <h4>결과보기</h4>
-                    <div class="result05"></div>
+                    <div class="result5">
+                        3
+                    </div>
                 </div>
             </div>
             <!-- //sample5 -->
@@ -178,9 +210,9 @@
     }
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result6t">
                     <h4>결과보기</h4>
-                    <div class="result06"></div>
+                    <div class="result6"></div>
                 </div>
             </div>
             <!-- //sample6 -->
@@ -216,9 +248,9 @@
     })
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result7t">
                     <h4>결과보기</h4>
-                    <div class="result07">
+                    <div class="result7">
                         100 200 300 400 500<br>
                         100 200 300 400 500<br>
                         100 200 300 400 500<br>
@@ -245,9 +277,9 @@
     }
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result8t">
                     <h4>결과보기</h4>
-                    <div class="result08">
+                    <div class="result8">
                         100 200 300 400 500
                     </div>
                 </div>
@@ -271,9 +303,9 @@
     }
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result9t">
                     <h4>결과보기</h4>
-                    <div class="result09">
+                    <div class="result9">
                         0 1 2 3 4<br>
                         100 200 300 400 500
                     </div>
@@ -301,7 +333,7 @@
     });
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result10t">
                     <h4>결과보기</h4>
                     <div class="result10">
                         100 200 300 400 500<br>
@@ -337,7 +369,7 @@
     document.write(...num);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result11t">
                     <h4>결과보기</h4>
                     <div class="result11">
                         100, 200, 300, 400, 500<br>
@@ -362,9 +394,9 @@
     document.write(c);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result12t">
                     <h4>결과보기</h4>
-                    <div class="result11">
+                    <div class="result12">
                         100<br>
                         200<br>
                         javascript
@@ -378,6 +410,8 @@
     </main>
 
     <!-- script -->
+    <script src="assets/js/script.js"></script>
+
     <script>
         //01. 변수 : 데이터 불러오기
         {
@@ -385,7 +419,7 @@
                 y = 200,
                 z = "javascript";
 
-            document.querySelector(".result01").innerHTML = x + "<br>" + y + "<br>" + z;
+            //document.querySelector(".result01").innerHTML = x + "<br>" + y + "<br>" + z;
         }
 
         //02. 상수 : 데이터 불러오기
@@ -394,28 +428,28 @@
                   y = 200,
                   z = "javascript";
 
-            document.querySelector(".result02").innerHTML = x + "<br>" + y + "<br>" + z;
+            //document.querySelector(".result02").innerHTML = x + "<br>" + y + "<br>" + z;
         }
 
         //03. 배열 : 데이터 불러오기
         {
             const arr = [100, 200, "javascript"];
 
-            document.querySelector(".result03").innerHTML = arr[0] + "<br>" + arr[1] + "<br>" + arr[2];
+            //document.querySelector(".result03").innerHTML = arr[0] + "<br>" + arr[1] + "<br>" + arr[2];
         }
 
         //04. 배열 : 데이터 불러오기 : 2차 배열
         {
             const arr = [100, 200, ["javascript", "jquery"]];
 
-            document.querySelector(".result04").innerHTML = arr[0] + "<br>" + arr[1] + "<br>" + arr[2] + "<br>" + arr[2][0] + "<br>" + arr[2][1];
+            //document.querySelector(".result04").innerHTML = arr[0] + "<br>" + arr[1] + "<br>" + arr[2] + "<br>" + arr[2][0] + "<br>" + arr[2][1];
         }
 
         //05. 배열 : 데이터 불러오기 : 갯수 구하기
         {
             const arr = [100, 200, "javascript"];
 
-            document.querySelector(".result05").innerHTML = arr.length;
+            //document.querySelector(".result05").innerHTML = arr.length;
         }
 
         //06. 배열 : 데이터 불러오기 : for()문
@@ -433,9 +467,9 @@
             //     document.write(arr[i], "<br>");
             // }
 
-            for( let i=0; i<arr.length; i++ ){
-                document.querySelector(".result06").innerHTML += arr[i] + "<br>";
-            }
+            // for( let i=0; i<arr.length; i++ ){
+            //     document.querySelector(".result06").innerHTML += arr[i] + "<br>";
+            // }
         }
 
         //07. 배열 : 데이터 불러오기 : forEach()
@@ -534,12 +568,12 @@
                 c: "javascript"
             }
 
-            document.write(obj.a, "<br>")
-            document.write(obj.b, "<br>")
-            document.write(obj.c, "<br>")
-            document.write(obj['a'], "<br>")
-            document.write(obj['b'], "<br>")
-            document.write(obj['c'], "<br>")
+            // document.write(obj.a, "<br>")
+            // document.write(obj.b, "<br>")
+            // document.write(obj.c, "<br>")
+            // document.write(obj['a'], "<br>")
+            // document.write(obj['b'], "<br>")
+            // document.write(obj['c'], "<br>")
         }
 
         //14. 객체 : 데이터 불러오기 : Object
@@ -550,9 +584,9 @@
                 c: "javascript"
             }
 
-            document.write(Object.keys(obj), "<br>");
-            document.write(Object.values(obj), "<br>");
-            document.write(Object.entries(obj), "<br>");
+            // document.write(Object.keys(obj), "<br>");
+            // document.write(Object.values(obj), "<br>");
+            // document.write(Object.entries(obj), "<br>");
         }
 
         //15. 객체 : 데이터 불러오기 : 변수
@@ -563,13 +597,13 @@
                 c: "javascript"
             }
 
-            const name1 = obj.a;
-            const name2 = obj.b;
-            const name3 = obj.c;
+            // const name1 = obj.a;
+            // const name2 = obj.b;
+            // const name3 = obj.c;
 
-            document.write(name1)
-            document.write(name2)
-            document.write(name3)
+            // document.write(name1)
+            // document.write(name2)
+            // document.write(name3)
         }
     </script>
 </body>
