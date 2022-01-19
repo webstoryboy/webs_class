@@ -4,66 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout02</title>
+    <title>Layout03</title>
     <style>
         * {
             margin: 0;
             padding: 0;
         }
-        body
-        #container {
+        #wrap {
             width: 1200px;
             margin: 0 auto;
         }
         #header {
             width: 1200px;
             height: 100px;
-            background-color: #C8E6C9;
+            background-color: #333;
         }
         #nav {
             width: 1200px;
             height: 100px;
-            background-color: #A5D6A7;
+            background-color: #222;
         }
         #contents {
             width: 1200px;
+            display: flex;
         }
-        #contents .left {
-            width: 300px;
-            height: 780px;
-            background-color: #81C784;
-            float: left;
+        #contents .aside {
+            width: 400px;
+            height: 680px;
+            background-color: #555;
         }
-        #contents .center {
-            width: 600px;
-            height: 780px;
-            background-color: #66BB6A;
-            float: left;
+        #contents .content {
+            width: 800px;
         }
-        #contents .right {
-            width: 300px;
-            height: 780px;
-            background-color: #4CAF50;
-            float: left;
+        #contents .content .article1 {
+            width: 800px;
+            height: 280px;
+            background-color: #666;
+        }
+        #contents .content .article2 {
+            width: 800px;
+            height: 280px;
+            background-color: #777;
+        }
+        #contents .content .article3 {
+            width: 800px;
+            height: 280px;
+            background-color: #888;
         }
         #footer {
             width: 1200px;
             height: 100px;
-            background-color: #43A047;
-            clear: both;
+            background-color: #444;
         }
     </style>
 </head>
 <body>
-    <div id="container">
-        <div id="header"></div>
-        <div id="nav"></div>
-        <div id="contents">
-            <div class="left"></div>
-            <div class="center"></div>
-            <div class="right"></div>
-        </div>
-        <div id="footer"></div>
+
+    <div id="wrap">
+        <header id="header"></header>
+        <nav id="nav"></nav>
+        <section id="contents">
+            <aside class="aside"></aside>
+            <section class="content">
+                <article class="article1"></article>
+                <article class="article2"></article>
+                <article class="article3"></article>
+            </section>
+        </section>
+        <footer id="footer"></footer>
     </div>
+
 </body>
 </html>
