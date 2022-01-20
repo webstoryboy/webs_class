@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알고리즘</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/prism2.css">
+
+    <!-- script -->
+    <script src="assets/js/prism2.js"></script>
+</head>
+<body>
+
+    <div class="back"><a href="algorithm.html">Back</a></div>
+    
+    <main id="main">
+        <div class="test">
+            <h2>5. 모음 찾기</h2>
+
+            <h3>Q : a, e, i, o, u가 몇개 들어 있는지 출력하는 함수를 작성해주세요!</h3>
+
+            <h4>예시</h4>
+            <ul>
+                <li>abracadabra ⇒ 5</li>
+            </ul>
+
+            <h4>코드</h4>
+            <div class="code">
+<pre class="line-numbers"><code class="language-js">const t5 = (str) => {
+    let count = 0
+    const vowels = ["a", "e", "i", "o", "u"]
+    for (let i of str)
+        if (vowels.includes(i)) count++;
+    return count;
+}</code></pre>
+            </div>
+
+            <h4>풀이</h4>
+            <p>
+                a, e, i, o, u가 담긴 const 형태의 배열을 하나 만든 후 string의 자료형을 가진 str에서 for of 문을 이용하여 문자가 모음들이 담긴 배열에 있는지, 즉, 모음인지 비교하여 카운트해주었습니다.
+            </p>
+        </div>
+    </main>
+
+    <script>
+        
+    </script>
+</body>
+</html>

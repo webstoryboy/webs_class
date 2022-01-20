@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알고리즘</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/prism2.css">
+
+    <!-- script -->
+    <script src="assets/js/prism2.js"></script>
+</head>
+<body>
+
+    <div class="back"><a href="algorithm.html">Back</a></div>
+    
+    <main id="main">
+        <div class="test">
+            <h2>8. 아이큐 테스트</h2>
+
+            <h3>Q : 홀수 또는 짝수중에 하나만 존재하는 값의 순번을 출력하는 함수를 작성해주세요.</h3>
+
+            <h4>예시</h4>
+            <ul>
+                <li>"2 4 7 8 10" ⇒ 3 # 7만 홀수</li>
+                <li>"1 2 1 1" ⇒ 2 # 2만 짝수</li>
+            </ul>
+
+            <h4>주의할점</h4>
+            <ul>
+                <li>순번의 시작은 0이 아니라 1입니다.</li>
+            </ul>
+
+            <h4>코드</h4>
+            <div class="code">
+<pre class="line-numbers"><code class="language-js">const t8 = (nums) => {
+    let num = nums.split(" ");
+    for(let i in num) num[i] %= 2;
+    return num.filter(e => 1 === e).length == 1 ? num.findIndex(v => v === 1)+1 : num.findIndex(v => v === 0)+1 
+}</code></pre>
+            </div>
+
+            <h4>풀이</h4>
+            <p>
+                우선, 주어진 nums의 형태가 띄어쓰기로 구분되는 문자열이므로 이를 숫자들로 구분해주기 위해 split()을 사용하였습니다. 그리고 for in문으로 모든 인자들에 접근하여 값이 홀수라면 1, 짝수라면 0으로 변환시켜 주었습니다. 이는 짝수와 홀수의 개수를 카운트하기 위함입니다. 이후 filter를 이용하여 element가 1인 요소들, 즉 홀수만 담겨있는 배열의 길이를 확인한 후 1이라면 홀수가 1개이므로 그 홀수인 요소의 인덱스를 findIndex로 찾아서 리턴하였고 1이 아니라면 짝수가 1개 있다는 것이므로 짝수인 요소를 찾아서 인덱스를 리턴해주었습니다. index는 0부터 시작하지만 순번은 1부터 시작하므로 1을 더해서 리턴하였습니다.
+            </p>
+        </div>
+    </main>
+
+    <script>
+        
+    </script>
+</body>
+</html>

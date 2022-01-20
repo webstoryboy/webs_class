@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알고리즘</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/prism2.css">
+
+    <!-- script -->
+    <script src="assets/js/prism2.js"></script>
+</head>
+<body>
+
+    <div class="back"><a href="algorithm.html">Back</a></div>
+    
+    <main id="main">
+        <div class="test">
+            <h2>3. 승점구하기</h2>
+
+            <!-- 01 -->
+            <h3>Q : 점수를 보고 이기면 3점, 비기면 1점, 지면 0점으로 계산하여 전체 승점을 구하는 함수를 작성해주세요.</h3>
+
+            <h4>입력 예제</h4>
+            <ul>
+                <li>["3:1", "2:2", "1:3"] ⇒ 4</li>
+            </ul>
+
+            <h4>주의할점</h4>
+            <ul>
+                <li>10개의 경기 점수를 입력합니다.</li>
+                <li>0점에서 최대 4점까지 입력합니다.</li>
+            </ul>
+
+            <h4>코드</h4>
+            <div class="code">
+<pre class="line-numbers"><code class="language-js">const t3 = (games) => {
+    let score = 0;
+    for (let value of games) {
+        if (value[0] > value[2]) score += 3;
+        else if (value[0] &lt; value[2]) score++;
+    }
+    return score;
+}</code></pre>
+            </div>
+
+            <h4>풀이</h4>
+            <p>
+                경기 내용들이 배열 안에 string형태로 저장되어 있기 때문에 for of문으로 배열 안의 모든 요소들을 탐색하며 0번 인덱스 (내 점수) 와 2번 인덱스(상대의 점수)를 비교해서 score 변수에 승점을 누적해주었습니다.
+            </p>
+        </div>
+    </main>
+
+    <script>
+        const t3 = (games) => {
+            let score = 0;
+            for (let value of games) {
+                if (value[0] > value[2]) score += 3;
+                else if (value[0] < value[2]) score++;
+            }
+            return score;
+        }
+        console.log(t3(["3:1", "2:2", "1:3"]))
+    </script>
+</body>
+</html>
